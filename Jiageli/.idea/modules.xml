@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Jiageli.iml" filepath="$PROJECT_DIR$/Jiageli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aa/aa.iml" filepath="$PROJECT_DIR$/aa/aa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appOffer_246_Demo/appOffer_246_Demo.iml" filepath="$PROJECT_DIR$/appOffer_246_Demo/appOffer_246_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bDIntegrationSDK_LibProject/bDIntegrationSDK_LibProject.iml" filepath="$PROJECT_DIR$/bDIntegrationSDK_LibProject/bDIntegrationSDK_LibProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoa/demoa.iml" filepath="$PROJECT_DIR$/demoa/demoa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jialibao/jialibao.iml" filepath="$PROJECT_DIR$/jialibao/jialibao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mamaxiqu/mamaxiqu.iml" filepath="$PROJECT_DIR$/mamaxiqu/mamaxiqu.iml" />
+    </modules>
+  </component>
+</project>

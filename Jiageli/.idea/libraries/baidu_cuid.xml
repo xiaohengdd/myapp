@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="baidu_cuid">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bDIntegrationSDK_LibProject/libs/baidu_cuid.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'dqh'
+            keyPassword '123456'
+            storeFile file('C:/Users/home/AndroidStudioProjects/dqh.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "com.jiageli.home.jialibao"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/AppOffer_2.4.6.jar')
+}

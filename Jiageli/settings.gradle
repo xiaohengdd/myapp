@@ -1,0 +1,2 @@
+include ':bDIntegrationSDK_LibProject', ':demoa', ':aa', ':jialibao', ':mamaxiqu'
+include ':appOffer_246_Demo'
