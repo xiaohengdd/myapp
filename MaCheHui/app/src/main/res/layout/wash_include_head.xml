@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wash_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/wash_driver" />
+
+        <RadioGroup
+            android:id="@+id/wash_head_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/wash_head_rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/wash_item_right_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/wash_up_h"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="附近"
+                    android:textDirection="locale" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/wash_driver1" />
+
+                <RadioButton
+                    android:id="@+id/wash_head_rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/wash_item_right_selector"
+                    android:button="@null"
+                    android:drawableRight="@drawable/wash_up_h"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="洗车" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/wash_driver1" />
+
+                <RadioButton
+                    android:id="@+id/wash_head_rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/wash_item_right_selector"
+                    android:button="@null"
+                    android:drawableRight="@drawable/wash_up_h"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="筛选"
+                    android:textDirection="locale" />
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pub_ui_while">#FFFFFF</color>
+    <color name="pub_ui_home_s">#ff4707</color>
+    <color name="pub_ui_home_h">#5a5a5a</color>
+    <color name="pub_ui_line">#7b7b7b</color>
+    <color name="pub_ui_head_bg">#2f2f2f</color>
+    <color name="pub_ui_home_search">#5a5a5a</color>
+    <color name="pub_ui_find_item">#FFFFFF</color>
+    <color name="pub_ui_find_item_txt"> #000000 </color>
+    <color name="yellow">#ffcc00</color>
+    <color name="yellow_back">#FFEDBB</color>
+    <color name="yellow_test">#A25B00</color>
+    <color name="black">#cc000000</color>
+    <color name="black1">#22000000</color>
+    <color name="news_list_black">#333333</color>
+    <color name="news_list_time">#969696</color>
+    <color name="news_test">#5e5e5e</color>
+    <color name="third_color">#C9C9C9</color>
+    <color name="blue">#0000ff</color>
+    <color name="light_red">#ff3300</color>
+    <color name="green">#04c004</color>
+    <color name="choice_house_press">#86d3ef</color>
+    <color name="gold">#ffd700</color>
+    <color name="brown">#a52a2a</color>
+    <color name="deepskyblue">#00bfff</color>
+    <color name="darkblue">#00008b</color>
+    <color name="gray">#ffe7e7e7</color>
+    <color name="light_gray">#EFEFEF</color>
+    <color name="light_lanse">#33ffff</color>
+    <!-- 深灰色 -->
+    <color name="gray1">#5c615d</color>
+    <!-- 灰色 -->
+    <color name="gray2">#949393</color>
+    <!-- 淡灰色 -->
+    <color name="gray3">#CCCCCC</color>
+    <!-- 淡淡灰色 -->
+    <color name="gray4">#e5e5e5</color>
+    <color name="bg_app">#efefef</color>
+    <color name="bg_actionbar">#52c83b</color>
+    <color name="actionbar_selected">#298a24</color>
+    <color name="item_checked">#202020</color>
+    <color name="item_text_checked">#d4bc7c</color>
+    <color name="list_divider">#595959</color>
+    <color name="bg_left_tabs">#3d3d3d</color>
+    <color name="dialog_title_divider">#efefef</color>
+    <color name="text_default">#B4B4B4</color>
+    <color name="light_yellow">#fffae2</color>
+    <color name="more_footer_text_color">#33cccc</color>
+    <color name="more_footer_text_color1">#f3f3f3</color>
+    <!-- 输入框的背景的颜色 -->
+    <color name="login_edit_bg">#80FFFFFF</color>
+    <!-- 登陆的背景的颜色 -->
+    <color name="login_btn_bg">#ff9900</color>
+    <color name="stop_map_hover_bg">#FEFEFE</color>
+    <color name="stop_map_bottom_btn_bg">#FF7F24</color>
+    <color name="stop_map_bottom_txt_color">#FFFFFF</color>
+    <color name="stop_list_item_dirver">#FFFFFF</color>
+    <color name="wash_driver">#000000</color>
+    <color name="wash_driver1">#B5B5B5</color>
+    <color name="zu_choose_bg">#444444</color>
+    <color name="zu_choose_left_item_bg">#E5E5E5</color>
+    <color name="zu_choose_right_item_bg">#F3F3F3</color>
+    <color name="zu_choose_left_item_diveder">#D6D6D5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_text_select_color">#FF822E</color>
+    <!-- 按钮按下时候的背景 -->
+    <color name="wash_down_bg">#D1D1D1</color>
+    <color name="orange">#FF4500</color>
+ 
+    <!-- 商品的当前的价格 -->
+    <color name="shop_goods_price">#EE0000</color>
+    <color name="devide_line">#CBCED2</color>
+    <color name="whites">#ffffff</color>
+    <color name="grays">#818181</color>
+    <color name="gray_font">#818181</color>
+    <color name="common_title">#F9F9F9</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="refresh_head_bg">#2B2B2B</color>
+    <color name="backColor">#2000</color>
+    <color name="detail_bgColor">#f5f5f5</color>
+    <color name="defaultTextColor">#666</color>
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="background">#272727</color>
+    <color name="orange_yellow">#9b9ba0</color>
+
+    <drawable name="semi_black">#80000000</drawable>
+
+    <color name="remote_connect_text">#FFe78018</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+
+ 
+	<!-- 商品的当前的价格 -->
+ 
+
+ 	<color name="navpage">#FFE1E8EB</color>
+ 	    
+   
+    
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    
+    
+    <color name="gray_find">#d1d1d1</color>
+    <color name="light_gray_item_find">#fcfcfc</color>
+    
+     <color name="red_yello">#fe4807</color>
+     <!-- 字体灰颜色 -->
+    <color name="text_gray">#a2a2a2</color>
+   
+      <!-- 字体黑灰颜色 -->
+    <color name="text_black_gray">#3e3e3e</color>
+     <!-- 字体黄色颜色 -->
+    <color name="text_yello">#ff4807</color>
+     <!-- 北京灰色颜色 -->
+    <color name="bg_gray">#C0C0C0</color>
+    <!-- 红色字体 -->
+    <color name="text_red">#ff4706</color>
+     <!-- 蓝色字体 -->
+    <color name="text_blue">#07a6ff</color>
+     <!-- 灰色背景 -->
+    <color name="home_fragment_grid_view">#efeff1</color>
+ 	 
+ 
+</resources>

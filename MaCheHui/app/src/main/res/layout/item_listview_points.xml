@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="14dp"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/good_iv_item_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/image_default" />
+
+    <TextView
+        android:id="@+id/name_tv_item_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/good_iv_item_points"
+        android:layout_toRightOf="@+id/good_iv_item_points"
+        android:layout_marginLeft="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="玻璃水"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/price_tv_item_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/good_iv_item_points"
+        android:layout_alignBottom="@+id/good_iv_item_points"
+        android:layout_alignLeft="@+id/name_tv_item_points"
+        android:text="50积分" />
+
+    <TextView
+        android:id="@+id/change_tv_item_points"
+        android:layout_width="59dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@+id/price_tv_item_points"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/yzm_selector"
+        android:text="兑换" />
+
+</RelativeLayout>

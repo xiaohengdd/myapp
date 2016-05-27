@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/fillet_white_baground" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="消费总额：￥"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_pay_et_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请询问服务员后输入"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16sp" >
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/payment_rl" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/payment_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:text="优惠券：" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/youhuiquan_tv_payment"
+                style="@style/payment_tv"
+                android:text="暂无优惠券" />
+
+            <CheckBox
+                android:id="@+id/youhuiquan_use_cb_payment"
+                style="@style/payment_center_cbox"
+                android:layout_marginRight="0dp"
+                android:checked="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/payment_rl" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/payment_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:text="实付金额：￥" />
+
+        <TextView
+            android:id="@+id/actually_pay_tv_payment"
+            style="@style/payment_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text=""
+            android:textColor="#fd4706" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/confirm_btn_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/login_btn_selector"
+            android:text="提交订单"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

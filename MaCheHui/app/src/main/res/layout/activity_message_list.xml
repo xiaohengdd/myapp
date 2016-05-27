@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <com.cac.machehui.client.view.XListView
+        android:id="@+id/message_xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1px" >
+    </com.cac.machehui.client.view.XListView>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/sad"
+        android:gravity="center_horizontal"
+        android:text="哎呦，消息是空的！"
+        android:textSize="18sp" />
+
+</LinearLayout>

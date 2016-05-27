@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="您是否要解除绑定？解除后将无法与朋友分享足迹与体验"
+        android:textColor="#ff4905"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textView1"
+        android:background="@color/wash_driver" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1" >
+
+        <Button
+            android:id="@+id/cancle_btn_unbund_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="取消" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/wash_driver" />
+
+        <Button
+            android:id="@+id/confirm_btn_unbund_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="确定" />
+    </LinearLayout>
+
+</RelativeLayout>

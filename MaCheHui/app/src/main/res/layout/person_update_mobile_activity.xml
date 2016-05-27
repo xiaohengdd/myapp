@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <RelativeLayout
+        style="@style/update_pwd_rl"
+        android:layout_marginTop="14dp" >
+
+        <EditText
+            android:id="@+id/mobile_et_update"
+            style="@style/update_pwd_et"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入原手机号"
+            android:inputType="phone"
+            android:maxLength="11" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/rebind_sms_btn_update"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yzm_selector"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/update_pwd_rl" >
+
+        <EditText
+            android:id="@+id/verify_code_et_update"
+            style="@style/update_pwd_et"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="4" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save_btn_update_mobile"
+        style="@style/red_big_btn"
+        android:text="验证" />
+
+</LinearLayout>

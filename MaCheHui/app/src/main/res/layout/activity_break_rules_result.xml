@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <TextView
+        android:id="@+id/car_number_tv_break_rules"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#fe4807"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/result_lv_break_rules"
+        android:layout_width="match_parent"
+        android:dividerHeight="5dp"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

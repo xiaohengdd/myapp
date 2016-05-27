@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/top_rl"
+        layout="@layout/header_top" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/top_rl"
+        android:background="@color/wash_driver" />
+
+    <ListView
+        android:id="@+id/country_lvcountry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:scrollbars="@null"
+        android:layout_gravity="center"
+        android:listSelector="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/number_base"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+
+    <wkj.team.driver.view.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="30.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center"
+        android:layout_marginTop="50dp"
+        android:background="#7f7f7f"
+        android:visibility="invisible" />
+
+</RelativeLayout>

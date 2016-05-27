@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/wash_head_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/pub_ui_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wash_cur_deatail_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="个人资料"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/return_ib_person_info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wash_back_bg_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#5b5b5b"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/header_rl_person_info"
+        android:layout_height="104dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/item_no_line_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/my_infor_tv"
+            android:text="我的头像" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/my_infor_right_iv" />
+
+        <com.cac.machehui.client.view.RoundRectImage
+            android:id="@+id/header_iv_person_info"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:background="@drawable/person_07"
+            android:scaleType="matrix" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_name_rl_person_info"
+        style="@style/my_infor_rl"
+        android:visibility="gone"
+        android:layout_marginTop="1px" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/my_infor_tv"
+            android:text="昵称" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            style="@style/my_infor_right_iv" />
+
+        <TextView
+            android:id="@+id/nick_name_tv_peron_info"
+            style="@style/my_infor_center_tv"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_rl_person_info"
+        style="@style/my_infor_rl"
+        android:layout_marginTop="1px" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/my_infor_tv"
+            android:text="性别" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            style="@style/my_infor_right_iv" />
+
+        <TextView
+            android:id="@+id/sex_tv_peron_info"
+            style="@style/my_infor_center_tv"
+            android:layout_toLeftOf="@+id/imageView5"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/identify_rl_person_info"
+        style="@style/my_infor_rl"
+        android:layout_marginTop="1px" >
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/my_infor_tv"
+            android:text="会员身份" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            style="@style/my_infor_right_iv" />
+
+        <TextView
+            android:id="@+id/identify_tv_peron_info"
+            style="@style/my_infor_center_tv"
+            android:layout_toLeftOf="@+id/imageView6"
+            android:text=""
+            android:textColor="#adadad" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mobile_rl_person_info"
+        style="@style/my_infor_rl"
+        android:layout_marginTop="14dp" >
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/my_infor_tv"
+            android:text="手机号" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            style="@style/my_infor_right_iv" />
+
+        <TextView
+            android:id="@+id/mobile_tv_peron_info"
+            style="@style/my_infor_center_tv"
+            android:layout_toLeftOf="@+id/imageView7"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pwd_rl_person_info"
+        style="@style/my_infor_rl"
+        android:layout_marginTop="1px" >
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/my_infor_tv"
+            android:text="密码修改" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            style="@style/my_infor_right_iv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bund_rl_person_info"
+        style="@style/my_infor_rl"
+        android:layout_marginTop="1px" >
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/my_infor_tv"
+            android:text="微信解绑" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            style="@style/my_infor_right_iv" />
+
+        <TextView
+            android:id="@+id/bund_state_tv_peron_info"
+            style="@style/my_infor_center_tv"
+            android:layout_toLeftOf="@+id/imageView9"
+            android:text="未绑定" />
+    </RelativeLayout>
+
+</LinearLayout>

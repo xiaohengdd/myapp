@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp" 
+    android:orientation="horizontal"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="7" >
+
+        <ImageView
+            android:id="@+id/quan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/liquan_img" />
+
+        <TextView
+            android:id="@+id/quanName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/quan_img"
+            android:layout_toRightOf="@+id/quan_img"
+            android:layout_marginLeft="20dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text="优速特" 
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/quanDiscribe"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quanName"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/quanName"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:text="洗车10次套餐" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="3"  >
+
+        <TextView
+            android:id="@+id/quan_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="9" 
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/quan_count"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/right_arrow" />
+
+    </RelativeLayout>
+
+</LinearLayout>

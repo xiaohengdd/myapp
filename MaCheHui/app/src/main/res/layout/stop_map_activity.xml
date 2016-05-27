@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 顶部的提示的信息 -->
+
+        <RelativeLayout
+            android:id="@+id/stop_map_head_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@color/stop_map_hover_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stop_map_cur_tv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/stop_map_txt"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:id="@+id/stop_map_btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/stop_map_back_btn" />
+        </RelativeLayout>
+        <!-- 顶部显示的信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/stop_map_hover_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/stop_map_currt_info_icon" />
+
+            <TextView
+                android:id="@+id/stop_map_currt_pos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="当前的位置" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.0" >
+        </LinearLayout>
+        <!-- 底部搜索的信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.0"
+            android:background="@color/stop_map_hover_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:paddingTop="5dp"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/stop_map_btn_p"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:drawableTop="@drawable/stop_map_currt_info_p_s"
+                    android:text="当前位置"
+               android:padding="1dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/stop_map_btn_f"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:padding="1dp"
+                        android:gravity="center_horizontal"
+                    android:drawableTop="@drawable/stop_map_currt_info_f_s"
+                    android:text="目的地"
+                   
+                    android:textSize="12sp" 
+                      />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/stop_map_btn_currt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/stop_map_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/stop_map_bottom_txt"
+                    android:textColor="@color/stop_map_bottom_txt_color"
+                    android:textSize="24sp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/stop_map_ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/stop_map_bottom_border"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/stop_map_currt_info_c_h" />
+
+                    <Button
+                        android:id="@+id/stop_map_tv_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/stop_map_border_edit"
+                        android:gravity="center_vertical"
+                         
+                        android:hint="请输入当前的位置" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

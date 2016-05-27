@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015.7.8 14:45:38"
+            android:textColor="#454545"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="经十路与山师东路交叉口好覅首都成本为部分热乎而发地方你就二等奖覅额"
+            android:textColor="#454545"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="未按规定车道行驶说的话覅二分法蝴蝶花覅的金佛山的覅释迦佛是的"
+            android:textColor="#454545"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/fakuan_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="200"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fakuan_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fakuan_value"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/fakuan_value"
+            android:text="罚款 "
+            android:textColor="#454545"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/jifen_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jifen_value"
+            android:layout_alignLeft="@+id/fakuan_key"
+            android:layout_below="@+id/fakuan_key"
+            android:text="计分"
+            android:textColor="#454545"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/jifen_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fakuan_value"
+            android:layout_below="@+id/fakuan_value"
+            android:text="2"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

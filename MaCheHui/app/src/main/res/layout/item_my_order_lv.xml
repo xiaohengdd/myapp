@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/order_iv_item"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/image_default" />
+
+    <TextView
+        android:id="@+id/order_name_tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/order_iv_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/order_iv_item"
+        android:text="为人体与io膨润土yui哦"
+        android:maxWidth="@dimen/my_order_center_tv_width"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/order_detail_tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/order_iv_item"
+        android:layout_alignLeft="@+id/order_name_tv_item"
+        android:layout_below="@+id/order_name_tv_item"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/state_tv_item"
+        android:layout_toRightOf="@+id/order_iv_item"
+        android:gravity="bottom"
+        android:text="而他与io儿童yui欧赔" />
+
+    <TextView
+        android:id="@+id/state_tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order_detail_tv_item"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/action_tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/order_iv_item"
+        android:layout_alignLeft="@+id/state_tv_item"
+        android:text="" />
+
+</RelativeLayout>

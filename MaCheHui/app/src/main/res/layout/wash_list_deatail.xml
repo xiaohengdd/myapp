@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wash_deatil_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 顶部的提示的信息 -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.cac.machehui.client.view.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/jjj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/wash_deatail_head_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/stop_map_hover_bg"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/wash_deatail_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/detail_default" />
+                </RelativeLayout>
+
+                <!-- 地址 -->
+
+                <RelativeLayout
+                    android:id="@+id/wash_rl_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/stop_map_hover_bg"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <!--
+                          <ImageView
+                        android:id="@+id/wash_lsit_detail_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_location" />
+                    -->
+
+                    <RadioButton
+                        android:id="@+id/wash_deatail_rb_go"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="3dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/app_map_icon"
+                        android:text="到这去"
+                        android:textColor="#5b5b5b"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/wrap_deatail_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toLeftOf="@id/wash_deatail_rb_go"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <!-- 预约联系电话 -->
+
+                <RelativeLayout
+                    android:id="@+id/wash_rl_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/stop_map_hover_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/wrap_deatail_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <!-- 付款 -->
+
+                <RelativeLayout
+                    android:id="@+id/wash_rl_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/stop_map_hover_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/wrap_deatail_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:text="线上付款更方便"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/wash_deatail_btn_pay"
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/btn_bg"
+                        android:button="@null"
+                        android:text="去付款"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <!-- 优惠信息 -->
+
+                <RelativeLayout
+                    android:id="@+id/wash_rl_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/stop_map_hover_bg"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/wrap_deatail_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="优惠信息: "
+                        android:textColor="#ff4707"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="#FFFFFF"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="商品"
+                        android:textSize="18sp" />
+                </LinearLayout>                -->
+
+                <com.cac.machehui.client.view.ScrollViewListView
+                    android:id="@+id/goods_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:scrollbars="none" >
+                </com.cac.machehui.client.view.ScrollViewListView>
+                <!-- 网友点评 ↓ -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/stop_map_hover_bg"
+                    android:gravity="center_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="网友点评"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/good_evaluation"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/evaluation_bg_selector" />
+                </RelativeLayout>
+                <!-- 网友点评 ↑ -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/stop_map_hover_bg"
+                    android:padding="10dp" >
+
+                    <!-- 快速查询 -->
+
+                    <TextView
+                        android:id="@+id/quick_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/wash_item_rate_bg"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="很快" />
+                    <!-- 清理干净 -->
+
+                    <TextView
+                        android:id="@+id/clear_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@id/quick_tv"
+                        android:background="@drawable/wash_item_rate_bg"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="洗的干净" />
+                    <!-- 排队 -->
+
+                    <TextView
+                        android:id="@+id/queue_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@id/clear_tv"
+                        android:background="@drawable/wash_item_rate_bg"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="排队" />
+                    <!-- 靠谱 -->
+
+                    <TextView
+                        android:id="@+id/reliable_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_toRightOf="@id/queue_tv"
+                        android:background="@drawable/wash_item_rate_bg"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="靠谱" />
+                    <!-- 技术好 -->
+
+                    <TextView
+                        android:id="@+id/Good_technology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/quick_tv"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/wash_item_rate_bg"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="师傅技术很好" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.cac.machehui.client.view.MyScrollView>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_top" />
+    <!--
+    <RelativeLayout
+        android:id="@+id/wash_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageButton
+            android:id="@+id/wash_deatail_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/account_ic_back" />
+
+        <TextView
+            android:id="@+id/wash_detail_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/wash_deatail_btn_back"
+            android:gravity="center"
+            android:text="商家详情"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </RelativeLayout>    -->
+
+</RelativeLayout>

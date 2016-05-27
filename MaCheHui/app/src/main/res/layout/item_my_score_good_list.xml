@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/img_iv_item_my_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/default2" />
+
+    <TextView
+        android:id="@+id/score_good_name_tv_item_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_iv_item_my_score"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/img_iv_item_my_score"
+        android:maxWidth="100dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/score_num_tv_item_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/score_good_name_tv_item_score"
+        android:layout_alignBottom="@+id/score_good_name_tv_item_score"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/score_good_name_tv_item_score"
+        android:text=""
+        android:textColor="#adadad"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pwd_tv_item_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_iv_item_my_score"
+        android:layout_alignLeft="@+id/score_good_name_tv_item_score"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/imageView10"
+        android:text=""
+        android:textColor="#adadad" />
+
+    <TextView
+        android:id="@+id/time_tv_item_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_iv_item_my_score"
+        android:layout_alignLeft="@+id/pwd_tv_item_score"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/imageView10"
+        android:text="chnefrnevrfmcodkmwodmewfrifc"
+        android:textColor="#adadad" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        style="@style/my_infor_right_iv" />
+
+</RelativeLayout>

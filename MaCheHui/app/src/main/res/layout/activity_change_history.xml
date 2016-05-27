@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <com.cac.machehui.client.view.XListView
+        android:id="@+id/history_xlv_points"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:dividerHeight="7dp" >
+    </com.cac.machehui.client.view.XListView>
+     <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="哎呦，兑换记录是空的，快去用积分兑换商品吧！"
+        android:drawableTop="@drawable/sad"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

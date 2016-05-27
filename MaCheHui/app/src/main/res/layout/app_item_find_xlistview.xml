@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/pub_ui_find_item"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/pub_ui_find_item_iv"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp" 
+        android:background="@drawable/default2"
+        android:src="@drawable/default2"/>
+
+    <ImageView
+        android:id="@+id/pub_ui_find_item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp" />
+    
+    <ProgressBar
+        android:id="@+id/load_img_pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pub_ui_find_item_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:visibility="gone" />
+    <LinearLayout 
+       
+        android:layout_width="40dp"
+            android:layout_height="40dp"
+           android:layout_marginLeft="320dp"
+        >
+         <ImageView 
+             android:id="@+id/tag_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:background="@drawable/pub_ui_find_active"/>
+    </LinearLayout>
+   
+
+    <LinearLayout
+        android:id="@+id/pub_ui_find_item_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/pub_ui_find_item_icon"
+        android:layout_toRightOf="@+id/pub_ui_find_item_iv"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pub_ui_find_item_text_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" 
+            android:textColor="#454545"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_gravity="center_vertical"
+            android:text="xxxxxxxxxxxxx"/>
+
+        <TextView
+            android:id="@+id/pub_ui_find_item_text_content"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content" 
+            android:textSize="14sp" 
+            android:ellipsize="end"
+            android:text="xxxxx"/>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

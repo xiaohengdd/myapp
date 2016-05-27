@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <RelativeLayout
+        style="@style/update_pwd_rl"
+        android:layout_marginTop="14dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/update_pwd_left_tv"
+            android:text="旧密码" />
+
+        <EditText
+            android:id="@+id/old_pwd_et_update"
+            style="@style/update_pwd_et"
+            android:layout_toRightOf="@id/textView1"
+            android:hint="请输入旧密码" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/update_pwd_rl" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/update_pwd_left_tv"
+            android:text="新密码" />
+
+        <EditText
+            android:id="@+id/new_pwd_et_update"
+            style="@style/update_pwd_et"
+            android:layout_toRightOf="@id/textView2"
+            android:hint="请输入6-18位字母、数字" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/update_pwd_rl" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/update_pwd_left_tv"
+            android:text="确认密码" />
+
+        <EditText
+            android:id="@+id/confirm_pwd_et_update"
+            style="@style/update_pwd_et"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/textView3"
+            android:hint="请输入确认密码" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/confirm_btn_update_pwd"
+        style="@style/red_big_btn"
+        android:text="确定" />
+
+</LinearLayout>

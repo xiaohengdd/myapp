@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+     <RelativeLayout
+        android:id="@+id/title_rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_01">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请选择照片"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_pic_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+   <GridView
+       android:layout_below="@+id/title_rel"
+       android:id="@+id/gridview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:horizontalSpacing="8dp"
+       android:numColumns="3"
+       android:scrollbars="none"
+       android:verticalSpacing="8dp" >
+   </GridView>
+    	
+   <Button
+      android:id="@+id/bt"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:text="完成"
+      android:textColor="@color/white"
+      android:background="@drawable/pub_selector"
+      android:textSize="20sp" />
+
+</RelativeLayout>

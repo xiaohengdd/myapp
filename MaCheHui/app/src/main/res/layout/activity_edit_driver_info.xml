@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/pub_ui_head_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title_tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/left_return_ib_header"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wash_back_bg_selector" />
+
+        <TextView
+            android:id="@+id/wei_zhang_tv_edit_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#0097f6"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="查违章" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wash_driver" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 我的车型 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/stop_map_hover_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mine_driver_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="我的车型"
+                android:textColor="#adadad"
+                android:textSize="18sp" />
+
+            <!-- 选择车型的按钮 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:layout_toRightOf="@+id/mine_driver_type_name"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/driver_type_tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3e3e3e"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/driver_modle_tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3e3e3e"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/car_num_rl_edit"
+            style="@style/my_infor_rl"
+            android:layout_marginTop="1px" >
+
+            <TextView
+                android:id="@+id/mine_driver_card_name"
+                style="@style/my_infor_tv"
+                android:text="车牌号" />
+
+            <TextView
+                android:id="@+id/driver_num_tv_edit"
+                style="@style/my_infor_center_tv"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:gravity="right"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/my_infor_right_iv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/car_name_rl_edit"
+            style="@style/my_infor_rl"
+            android:layout_marginTop="1px" >
+
+            <TextView
+                android:id="@+id/mine_driver_user_name"
+                style="@style/my_infor_tv"
+                android:text="车主姓名" />
+
+            <TextView
+                android:id="@+id/driver_name_tv_edit"
+                style="@style/my_infor_center_tv"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/my_infor_right_iv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jia_num_rl_edit"
+            style="@style/my_infor_rl"
+            android:layout_marginTop="1px" >
+
+            <TextView
+                android:id="@+id/mine_driver_card_num_name"
+                style="@style/my_infor_tv"
+                android:text="车架号" />
+
+            <TextView
+                android:id="@+id/driver_jia_tv_edit"
+                style="@style/my_infor_center_tv"
+                android:layout_toLeftOf="@+id/imageView4"
+                android:maxLength="24"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/my_infor_right_iv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/engine_num_rl_edit"
+            style="@style/my_infor_rl"
+            android:layout_marginTop="1px" >
+
+            <TextView
+                android:id="@+id/mine_driver_engine_num_name"
+                style="@style/my_infor_tv"
+                android:text="发动机号" />
+
+            <TextView
+                android:id="@+id/driver_engine_tv_edit"
+                style="@style/my_infor_center_tv"
+                android:maxLength="24"
+                android:layout_toLeftOf="@+id/imageView5"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/my_infor_right_iv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/km_rl_edit"
+            style="@style/my_infor_rl"
+            android:layout_marginTop="1px" >
+
+            <TextView
+                android:id="@+id/km_tv_driver_info"
+                style="@style/my_infor_tv"
+                android:text="行驶公里数" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/my_infor_right_iv" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:text="公里"
+                android:textColor="#3e3e3e"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/km_et_driver_tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:inputType="number"
+                android:text=""
+                android:textColor="#3e3e3e"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/delete_btn_edit"
+            style="@style/red_big_btn"
+            android:text="删除车辆" />
+    </LinearLayout>
+
+</LinearLayout>

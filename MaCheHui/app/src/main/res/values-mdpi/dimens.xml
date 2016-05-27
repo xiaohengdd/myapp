@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="my_order_center_tv_width">150dp</dimen>
+    <dimen name="dai_jia_center_pading">27dp</dimen>
+    <dimen name="dai_jia_center_text">14sp</dimen>
+    <dimen name="dai_jia_center_box">40dp</dimen>
+</resources>

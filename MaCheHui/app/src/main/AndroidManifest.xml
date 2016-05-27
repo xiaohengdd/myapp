@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cac.machehui"
+    android:versionCode="10"
+    android:versionName="1.0.10" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 信鸽的 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <!-- 百度API所需权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.cac.machehui.client.cst.AppClient"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="b9LKQH9jEoBXlDgzf6zspUCA" />
+
+        <!-- ======================================== 百度统计 start======================================================== -->
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="507493544e" />
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <meta-data
+            android:name="BaiduMobAd_TIME_INTERVAL"
+            android:value="2" />
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+        <!-- ======================================== 百度统计 end======================================================== -->
+        <activity
+            android:name="com.cac.machehui.client.activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.HomeActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 个人中心 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PersonalCenterActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 引导页 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.GuideActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 登陆 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- 忘记密码页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.ForgetPwdActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 修改昵称页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.UpdateNicknameActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 修改密码页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.UpdatePwdActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 绑定手机号页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.BundMobileActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.RegisterActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 停车界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.StopMapActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 停车店铺的列表界面界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.StopListActivity"
+            android:launchMode="singleTop"
+             >
+        </activity>
+
+        <!-- 停车店的详细的信息 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.StopMapDetailActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 洗车的主界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.WashActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 洗车详情界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.WashDeatilActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- 团购券或礼券的列表页 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.TuangouOrLiquanListActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 违章查询录入页 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.CarInfoInputActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 检索城市 -->
+        <activity
+            android:name="com.cac.machehui.client.sort.MainActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 检索城市 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.city.GetAddressInfoActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" >
+        </activity>
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.SettingActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 违章查询列表页 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PeccancyQueryActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 百度地图路线规划 -->
+        <activity
+            android:name="com.cac.machehui.client.map.MapPlanActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 车险报价 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.CarInsuranceActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 团购的界面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PurchaseDetailActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 我的玛车卡列表 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.MineMachekaListActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 我的车辆 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.MineDriverActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- 消息列表 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.MessageListActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 我的车辆 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.DriverInfoActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 购买订单 -->
+        <activity
+            android:name="com.weixin.paydemo.BuyActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 团购密码页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.TuangoupasswordActivcity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 绑定码车卡的页面 -->
+
+        <activity
+            android:name="com.cac.machehui.client.activity.BundleMachekaActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 积分商城的页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PointsActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 积分商城详情的页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PointsDetailActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 兑换记录的页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.ChangeHistoryActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 车型页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.DriverDetailActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- 微信支付加的 -->
+        <!-- 结算 -->
+        <activity
+            android:name="com.weixin.paydemo.PayActivity"
+            android:exported="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx3b748da1bf74f020" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.weixin.paydemo.PaySuccessActivity" >
+        </activity>
+        <activity
+            android:name="com.cac.machehui.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.cac.machehui.client.activity.DriverListActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.cac.machehui.client.activity.DriverListDetailActivity"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <!--
+ 爱车圈详情
+ 的页面
+        -->
+        <activity
+            android:name="com.cac.machehui.client.activity.FoundDetailActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 支付宝activity -->
+
+        <activity
+            android:name="com.alipay.sdk.pay.demo.PayDemoActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 我的订单页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.MineorderActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 版本更新页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.VersionUpdateActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogStyleBottom" >
+        </activity>
+         <!-- 转盘页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.LucyPanActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/DialogStyleBottom" >
+        </activity>
+        <!-- 我的资料页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PersonalInfoActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 代驾的页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.DriverServiceActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 关于我们页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.AboutActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 编辑车辆信息页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.EditDriverInfoActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 违章查询结果页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.BreakRulesResultActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 修改信息页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.UpdateInfoActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 去支付页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.PaymentActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 修改手机号页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.UpdateMobileActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 协议页面 -->
+        <activity
+            android:name="com.cac.machehui.client.activity.ProtocolActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 与微信通信页面 -->
+        <activity
+            android:name="com.cac.machehui.wxapi.WXEntryActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LodingDialog" >
+        </activity>
+        <!-- 安装包下载服务 -->
+        <service android:name="com.cac.machehui.client.service.DownloadService" >
+        </service>
+        <!-- 定位数据的后台 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+        </service>
+        <!-- 微信支付加的 -->
+        <receiver android:name="net.sourceforge.simcpux.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 信鸽的 -->
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- 15.9.23 另外加的信鸽接受的接受信息 看完删了就行 -->
+        <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
+        <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver android:name="com.cac.machehui.client.receiver.MessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true" >
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 当前包名 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.cac.machehui.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100131679" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="ACXY717FN65C" />
+        <!-- 以上是信鸽的 -->
+    </application>
+
+</manifest>

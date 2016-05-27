@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/stop_map_hover_bg" >
+
+    <ImageView
+        android:id="@+id/wash_detail_good_photo"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/wash_detail_good_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/wash_detail_good_photo"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="优速特29次洗车卡" />
+
+    <FrameLayout
+        android:id="@+id/old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/now_price" >
+
+        <TextView
+            android:id="@+id/old_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥100"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/app_oldpriceline" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/now_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/wash_detail_good_photo"
+        android:text="¥100"
+        android:textColor="@color/shop_goods_price"
+        android:textSize="18sp" 
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/wash_detail_good_diacant"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:alpha="0.9"
+        android:background="@drawable/wash_txt_tv_hui"
+         />
+
+</RelativeLayout>

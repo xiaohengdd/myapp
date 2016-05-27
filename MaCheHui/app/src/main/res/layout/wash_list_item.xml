@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/stop_map_hover_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/wash_item_pic"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/default2"
+        android:layout_margin="5dp"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/wash_item_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/wash_item_pic"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 商铺名称 -->
+
+            <TextView
+                android:id="@+id/wash_item_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="洗车店的名称"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/wash_item_shop_name_tv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/wash_txt_tv_hui"
+                android:focusable="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/wash_item_shop_ratingBar"
+            style="@style/wash_list_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="2.0" />
+
+        <TextView
+            android:id="@+id/wash_item_shop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="洗车店的地址" />
+    </LinearLayout>
+    <!-- listview 间隔辅助线 -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#D5D5D5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wash_item_shopnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shopnum"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/wash_item_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wash_item_rate_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="折扣"
+            android:textColor="#EE2C2C"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/wash_item_shop_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:drawableLeft="@drawable/wash_map_icon"
+                android:focusable="false"
+                android:text="距离" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
